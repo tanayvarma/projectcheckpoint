@@ -24,7 +24,19 @@
 <h1>
 <a id="progress-review" class="anchor" href="#progress-review" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Progress Review</h1>
 
-<p>We encountered several roadblocks while implementing our project on Android. Almost all of them were due to technicalities inherent in mobile development. It took us a long while to make significant progress in the sequential Android code, and we realized that we were spending far too much time dealing with Android errors. After speaking with our mentor, we decided to switch platforms and instead make a C++-based project. We have made a lot of headway in implementing the sequential version of the <a href="https://en.wikipedia.org/wiki/Viola%E2%80%93Jones_object_detection_framework">Viola-Jones' Algorithm</a>. We also read a lot of research papers to decide the most apt face detection algorithm for our project, understand the chosen one (Viola-Jones'), understand how eye state detection detection works and how can we implement it, designing our Machine Learning model for eye state and smile detection, and finally making a detailed plan on parts that we will parallelize. </p>
+<p>We encountered several roadblocks while implementing our project on Android. Almost all of them were due to technicalities inherent in mobile development. It took us a long while to make significant progress in the sequential Android code, and we realized that we were spending far too much time dealing with Android errors. </p>
+
+<p>After speaking with our mentor, we decided to switch platforms and instead make a C++-based project where we implement a highly parallel face-detection algorithm using C++/Cuda. We have made a some progress in implementing the sequential version of the <a href="https://en.wikipedia.org/wiki/Viola%E2%80%93Jones_object_detection_framework">Viola-Jones' Algorithm</a>. We also read a lot of research papers to decide the most apt face detection algorithm for our project, understand the chosen one (Viola-Jones'), understand how eye state detection detection works and how can we implement it, designing our Machine Learning model for eye state and smile detection, and finally making a detailed plan on parts that we will parallelize.</p>
+
+<p>Our Project now comprises of 3 parts:</p>
+
+<ul>
+<li>Developing highly parallel face detection utility in C++</li>
+<li>Implementing smile and eye-state detection on detected faces</li>
+<li>Analyzing and returning the best image in the Burst based on eye and smile states</li>
+</ul>
+
+<p><strong>NOTE:</strong> To parallelize and speed up face detection we plan to use GPU processing. To this regard, we will be using the latedays cluster at Carnegie Mellon University. More details about the GPU and CPU specifications can be found <a href="http://15418.courses.cs.cmu.edu/spring2016/article/8">here</a> </p>
 
 <h1>
 <a id="goals-and-deliverables" class="anchor" href="#goals-and-deliverables" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Goals and Deliverables</h1>
